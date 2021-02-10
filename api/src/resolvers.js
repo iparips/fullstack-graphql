@@ -5,8 +5,11 @@
 
 module.exports = {
   Query: {
-    pets: (parentResolverValue, {input}, {models}) => {
-      return models.Pet.findMany({})
+    pets: (parentResolverValue, {input}, context) => {
+      return context.models.Pet.findMany({type: input.type})
+    },
+    pet: (_, {input}, context) => {
+      return context.models.Pet.findOne({name: input.name})
     },
     shoes: (parentResolvedValue, {input}) => {
       return [{
