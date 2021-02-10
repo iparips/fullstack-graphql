@@ -5,8 +5,18 @@
 
 module.exports = {
   Query: {
-    pets: (parentResolverValue, {type}, {models}) => {
+    pets: (parentResolverValue, {input}, {models}) => {
       return models.Pet.findMany({})
+    },
+    shoes: (parentResolvedValue, {input}) => {
+      return [{
+          brand: 'nike',
+          size: 12
+        },
+        {
+          brand: 'adidas',
+          size: 13
+        }].filter(item => item.brand === input.brand)
     }
   },
   Pet: {

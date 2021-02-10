@@ -18,8 +18,24 @@ const typeDefs = gql`
         image: String
     }
 
+    type Shoe {
+        brand: String!
+        size: Int!
+    }
+    
+    input PetInput {
+        name: String
+        type: String
+    }
+    
+    input ShoesInput {
+        brand: String
+        size: Int
+    }
+    
     type Query {
-        pets(type: String!): [Pet]!
+        pets(input: PetInput!): [Pet]!
+        shoes(input: ShoesInput!): [Shoe]!
     }
 `;
 
