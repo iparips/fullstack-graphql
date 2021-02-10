@@ -22,6 +22,11 @@ module.exports = {
         }].filter(item => item.brand === input.brand)
     }
   },
+  Mutation: {
+    createShoe: (parentResolverValue, {input}, ctx) => {
+      return input
+    }
+  },
   Pet: {
     image: (resolvedParentValue) => {
       console.log("resolvedParentValue: ", resolvedParentValue);
