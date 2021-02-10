@@ -25,6 +25,9 @@ module.exports = {
   Mutation: {
     createShoe: (parentResolverValue, {input}, ctx) => {
       return input
+    },
+    createPet: (_, {input}, ctx) => {
+      return ctx.models.Pet.create(input)
     }
   },
   Pet: {
