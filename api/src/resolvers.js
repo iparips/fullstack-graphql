@@ -5,7 +5,7 @@
 
 module.exports = {
   Query: {
-    pets: (parentResolverValue, args, {models}) => {
+    pets: (parentResolverValue, {type}, {models}) => {
       return models.Pet.findMany({})
     }
   },

@@ -19,7 +19,7 @@ const typeDefs = gql`
     }
 
     type Query {
-        pets: [Pet]!
+        pets(type: String!): [Pet]!
     }
 `;
 
