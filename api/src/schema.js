@@ -8,6 +8,8 @@ const typeDefs = gql`
     type User {
         id: ID!
         username: String!
+        shoes: [Shoe]!
+        pets: [Pet]!
     }
 
     type Pet {
@@ -16,11 +18,17 @@ const typeDefs = gql`
         name: String!
         type: String!
         image: String
+        owner: User
     }
 
     type Shoe {
         brand: String!
         size: Int!
+        user: User!
+    }
+    
+    input UserInput {
+        id: String
     }
     
     input PetInput {
@@ -44,6 +52,7 @@ const typeDefs = gql`
     }
     
     type Query {
+        me: User!
         pets(input: PetInput!): [Pet]!
         pet(input: PetInput!): Pet
         shoes(input: ShoesInput!): [Shoe]!

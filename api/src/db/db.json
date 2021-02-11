@@ -1,50 +1,29 @@
 {
-  "user": {
+  "user": [{
     "id": "jBWMVGjm50l6LGwepDoty",
     "username": "frontendmaster"
-  },
+  }],
   "pet": [
-    {
-      "id": "-viKn4fKXIZmWEqojV5W_",
-      "createdAt": 1612934840344,
-      "name": "Bob",
-      "type": "DOG"
-    },
-    {
-      "id": "DmbU55FhgM_CMeA97IeVU",
-      "createdAt": 1612934940676,
-      "name": "Bobby",
-      "type": "DOG"
-    },
-    {
-      "id": "o_7AnVRGBzRaCDMzhITvu",
-      "createdAt": 1612935026504,
-      "name": "Betty",
-      "type": "DOG"
-    },
-    {
-      "id": "3Tqrx4PUaZ96eJX6I2cSV",
-      "createdAt": 1612935511454,
-      "name": "Becky",
-      "type": "DOG"
-    },
     {
       "id": "WFvl_tB8mj-45CTytwnyC",
       "createdAt": 1612941492471,
       "name": "Babe",
-      "type": "Dog"
+      "type": "Dog",
+      "owner": "asdfjkasdkjsadfk"
     },
     {
       "id": "fRyK503IPmbZE6kSAeAMB",
       "createdAt": 1612941495413,
       "name": "Babe",
-      "type": "Pig"
+      "type": "Pig",
+      "owner": "jBWMVGjm50l6LGwepDoty"
     },
     {
       "id": "TrHIL-xizOKwRj0lSn6PN",
       "createdAt": 1612941503081,
       "name": "Lassy",
-      "type": "Dog"
+      "type": "Dog",
+      "owner": "jBWMVGjm50l6LGwepDoty"
     }
   ]
 }

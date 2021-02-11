@@ -4,6 +4,16 @@
 This course comes with some [slides](https://docs.google.com/presentation/d/1IrGA4PtUEZPVDTBg5_WCMmUapElbFBgLwfSBAp8ft1g/edit?usp=sharing)
 
 
+## Queries
+
+```gql
+{
+    shoes(input:{brand:"nike"}){
+        size
+    }
+}
+```
+
 ## What you'll need
 * Node version >= 6
 

@@ -2,6 +2,21 @@
  * Here are your Resolvers for your Schema. They must match
  * the type definitions in your scheama
  */
+const user = {
+  "id": "jBWMVGjm50l6LGwepDoty",
+  "username": "frontendmaster"
+}
+
+const shoes = [{
+  brand: 'nike',
+  size: 12,
+  user: 1
+},
+  {
+    brand: 'adidas',
+    size: 13,
+    user: 2
+  }]
 
 module.exports = {
   Query: {
@@ -11,15 +26,8 @@ module.exports = {
     pet: (_, {input}, context) => {
       return context.models.Pet.findOne({name: input.name})
     },
-    shoes: (parentResolvedValue, {input}) => {
-      return [{
-          brand: 'nike',
-          size: 12
-        },
-        {
-          brand: 'adidas',
-          size: 13
-        }].filter(item => item.brand === input.brand)
+    shoes: (_, {input}) => {
+      return shoes.filter(item => item.brand === input.brand)
     }
   },
   Mutation: {
@@ -32,8 +40,18 @@ module.exports = {
   },
   Pet: {
     image: (resolvedParentValue) => {
-      console.log("resolvedParentValue: ", resolvedParentValue);
       return 'image'
+    },
+    owner: (parent, {input}, ctx) =>  {
+      return ctx.models.User.findOne({ id: parent.owner} )
+    }
+  },
+  User: {
+    shoes: () => shoes
+  },
+  Shoe: {
+    user(shoe) {
+      return user
     }
   }
 }
