@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83394046-df99-40c9-ae41-e834304a4d37" name="Default Changelist" comment="" />
+    <list default="true" id="83394046-df99-40c9-ae41-e834304a4d37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/db/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/db/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Pets.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Pets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1612741028977</updated>
       <workItem from="1612741033227" duration="4285000" />
-      <workItem from="1612932166893" duration="11274000" />
+      <workItem from="1612932166893" duration="11426000" />
+      <workItem from="1613089860450" duration="3862000" />
     </task>
     <servers />
   </component>
@@ -78,7 +87,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/api/src/schema.js</url>
           <line>32</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
